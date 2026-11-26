@@ -156,9 +156,11 @@ textarea{font:500 1rem var(--sans);padding:.75rem .9rem;border:1.5px solid #d4e0
 <label>Last name<input name="last_name" autocomplete="family-name" placeholder="Smith" required></label></div>
 <div class="row2"><label>Mobile phone<input name="phone" type="tel" autocomplete="tel" placeholder="(555) 123-4567" required></label>
 <label>Email<input name="email" type="email" autocomplete="email" placeholder="you@email.com" required></label></div>
-<div class="row2"><label>Service ZIP code<input name="zip" inputmode="numeric" maxlength="10" autocomplete="postal-code" placeholder="34711" required></label>
-<label>Property type<select name="property_type"><option>Single-family home</option><option>Vacation rental</option><option>HOA / community</option><option>Business</option></select></label></div>
-<label>Service needed<select name="service"><option>Weekly pool cleaning</option><option>Green or cloudy pool</option><option>Pool repair</option><option>One-time deep clean</option><option>Not sure yet</option></select></label>
+<label>Service address<input name="address" autocomplete="street-address" placeholder="123 Palm Ave" required></label>
+<div class="row2"><label>City<input name="city" autocomplete="address-level2" placeholder="Clermont" required></label>
+<label>ZIP code<input name="zip" inputmode="numeric" maxlength="10" autocomplete="postal-code" placeholder="34711" required></label></div>
+<div class="row2"><label>Property type<select name="property_type"><option>Single-family home</option><option>Vacation rental</option><option>HOA / community</option><option>Business</option></select></label>
+<label>Service needed<select name="service"><option>Weekly pool cleaning</option><option>Green or cloudy pool</option><option>Pool repair</option><option>One-time deep clean</option><option>Not sure yet</option></select></label></div>
 <fieldset class="pref"><legend>Best way to reach you</legend><label><input type="radio" name="contact_pref" value="Call" checked><span>Call</span></label><label><input type="radio" name="contact_pref" value="Text"><span>Text</span></label><label><input type="radio" name="contact_pref" value="Email"><span>Email</span></label></fieldset>
 <label>Anything we should know? <em style="font-weight:500">(optional)</em><textarea name="message" rows="2" placeholder="Pool size, screen enclosure, current water condition..."></textarea></label>
 <label class="consent"><input type="checkbox" name="consent" value="Yes" required><span>I agree to be contacted by PrimeBlue Pool Services by call, text or email about my quote. Message and data rates may apply.</span></label>
