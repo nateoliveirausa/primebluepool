@@ -139,7 +139,7 @@ textarea{font:500 1rem var(--sans);padding:.75rem .9rem;border:1.5px solid #d4e0
 <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Bilingual team (English / Português)</li></ul></div>
 
 <div class="card" id="quote"><h2>Request your free quote</h2><p class="s">No obligation. We reply the same business day.</p>
-<form id="qf" action="https://formsubmit.co/natan.bes@gmail.com" method="POST" novalidate>
+<form id="qf" action="https://formsubmit.co/primebluepoolservices@gmail.com" method="POST" novalidate>
 <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
 <input type="hidden" name="_subject" value="New free quote request - PrimeBlue (website)">
 <input type="hidden" name="_template" value="table"><input type="hidden" name="_captcha" value="false">
@@ -297,7 +297,7 @@ var bad=false;[].forEach.call(f.querySelectorAll("[required]"),function(i){var v
 if(bad){er.textContent="Please complete the highlighted fields.";er.style.display="block";return}
 sb.disabled=true;sb.textContent="Sending...";
 var d={};new FormData(f).forEach(function(v,k){d[k]=v});
-fetch("https://formsubmit.co/ajax/natan.bes@gmail.com",{method:"POST",headers:{"Content-Type":"application/json",Accept:"application/json"},body:JSON.stringify(d)})
+fetch("https://formsubmit.co/ajax/primebluepoolservices@gmail.com",{method:"POST",headers:{"Content-Type":"application/json",Accept:"application/json"},body:JSON.stringify(d)})
 .then(function(r){return r.json()}).then(function(j){if(String(j.success)==="true"){f.reset();ok.style.display="block";sb.textContent="Request sent";if(window.gtag)gtag("event","generate_lead");if(window.fbq)fbq("track","Lead")}else throw 0})
 .catch(function(){er.textContent="We couldn't send it. Please call or text (352) 349-8357 and we'll take care of you.";er.style.display="block";sb.disabled=false;sb.textContent="Request my free quote"})});
 </script></body></html>
